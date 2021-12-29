@@ -1,5 +1,5 @@
 ﻿
-namespace GUI.QLNS
+namespace BUS
 {
     partial class Form1
     {

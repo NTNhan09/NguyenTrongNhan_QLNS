@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache

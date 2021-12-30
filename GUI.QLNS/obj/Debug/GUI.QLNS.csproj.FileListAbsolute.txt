@@ -1,0 +1,6 @@
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.Form1.resources
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.Properties.Resources.resources
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\GUI.QLNS\obj\Debug\GUI.QLNS.GUI.resources

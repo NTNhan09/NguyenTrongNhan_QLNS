@@ -11,7 +11,7 @@ namespace Model.Product
         public string IdE { get; set; }
         public string Name { get; set; }
         public DateTime Db { get; set; }
-        public static char Gd { get; set; }
+        public bool Gd { get; set; }
         public string Pb { get; set; }
         public string IdD { get; set; }
         public List<CustomBEL> HR { get; set; }

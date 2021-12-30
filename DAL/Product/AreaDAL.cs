@@ -15,7 +15,7 @@ namespace DAL.Product
         {
             SqlConnection conn = CreateConnection();
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select *from congno", conn);
+            SqlCommand cmd = new SqlCommand("select *from HR", conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
             List<AreaBEL> IstArea = new List<AreaBEL>();
@@ -25,8 +25,8 @@ namespace DAL.Product
 
                 area.IdE = reader["IdEmployee"].ToString();
                 area.Name = reader["Name"].ToString();
-                area.Db = DateTime.Now;
-                area.Gd = reader["Gender"].ToString();
+                area.Db = DateTime.Parse(reader["DateBirth"].ToString());
+                area.Gd = bool.Parse(reader["Gender"].ToString());
                 area.Pb = reader["PlaceBirth"].ToString();
                 area.IdD = reader["IdDepartment"].ToString();
                 IstArea.Add(area);
@@ -38,15 +38,17 @@ namespace DAL.Product
         {
             SqlConnection conn = CreateConnection();
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select *from congno where id=" + id.ToString(), conn);
+            SqlCommand cmd = new SqlCommand("select *from HR where id=" + id.ToString(), conn);
             SqlDataReader reader = cmd.ExecuteReader();
             AreaBEL area = new AreaBEL();
             if (reader.HasRows && reader.Read())
             {
-                area.Id = reader["makhachhang"].ToString();
-                area.Name = reader["tenkhachhang"].ToString();
-                area.PhoneNumber = reader["sodienthoai"].ToString();
-                area.AmountOwed = decimal.Parse(reader["sotienno"].ToString());
+                area.IdE = reader["IdEmployee"].ToString();
+                area.Name = reader["Name"].ToString();
+                area.Db = DateTime.Parse(reader["DateBirth"].ToString());
+                area.Gd = bool.Parse(reader["Gender"].ToString());
+                area.Pb = reader["PlaceBirth"].ToString();
+                area.IdD = reader["IdDepartment"].ToString();
             }
             conn.Close();
             return area;

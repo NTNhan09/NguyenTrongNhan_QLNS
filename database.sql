@@ -23,7 +23,7 @@ ALTER TABLE Employee
 ADD FOREIGN KEY (IdDepartment) REFERENCES dbo.Departmen(IdDepartment);
 
 go
-insert into Employee values('C53418',N'Trần Tiến', 11/10/2000,1,N'Hà Nội', 'KT')
+insert into Employee values('C53418',N'Trần Tiến', 11/10/2000, 1,N'Hà Nội', 'KT')
 go
 insert into Employee values('X53416', N'Nguyễn Cường', 21/07/1999, 0, N'Đắk Lắk', 'KD')
 go

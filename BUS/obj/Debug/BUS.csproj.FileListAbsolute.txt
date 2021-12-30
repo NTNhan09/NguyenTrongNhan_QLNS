@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Documents\c#\NguyenTrongNhan_QLNS\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache

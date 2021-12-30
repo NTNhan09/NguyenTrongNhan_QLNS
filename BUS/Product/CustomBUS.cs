@@ -25,7 +25,7 @@ namespace BUS.Product
         {
             dal.DeleteCustomer(cus);
         }
-        public void ExitCustomer(CustomBEL cus)
+        public void EditCustomer(CustomBEL cus)
         {
             dal.EditCustomer(cus);
         }

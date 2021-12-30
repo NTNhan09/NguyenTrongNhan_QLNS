@@ -40,16 +40,16 @@ namespace GUI.QLNS
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbDateBirth = new System.Windows.Forms.DateTimePicker();
-            this.CheckBoxSex = new System.Windows.Forms.CheckBox();
+            this.tbDb = new System.Windows.Forms.DateTimePicker();
+            this.CbSex = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbPlaceBirth = new System.Windows.Forms.TextBox();
+            this.tbPb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbDepartment = new System.Windows.Forms.TextBox();
+            this.tbIdD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbId = new System.Windows.Forms.TextBox();
+            this.tbIdE = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHR)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,7 @@ namespace GUI.QLNS
             this.button4.TabIndex = 32;
             this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btExit);
             // 
             // button3
             // 
@@ -71,6 +72,7 @@ namespace GUI.QLNS
             this.button3.TabIndex = 31;
             this.button3.Text = "Sửa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btEdit);
             // 
             // button2
             // 
@@ -80,6 +82,7 @@ namespace GUI.QLNS
             this.button2.TabIndex = 30;
             this.button2.Text = "Xoá";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btDelete);
             // 
             // button1
             // 
@@ -89,6 +92,7 @@ namespace GUI.QLNS
             this.button1.TabIndex = 29;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btNew);
             // 
             // dgvHR
             // 
@@ -104,6 +108,7 @@ namespace GUI.QLNS
             this.dgvHR.Name = "dgvHR";
             this.dgvHR.Size = new System.Drawing.Size(683, 280);
             this.dgvHR.TabIndex = 28;
+            this.dgvHR.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHR_RowEnter);
             // 
             // Column1
             // 
@@ -135,22 +140,22 @@ namespace GUI.QLNS
             this.Column6.HeaderText = "Đơn vị";
             this.Column6.Name = "Column6";
             // 
-            // cbDateBirth
+            // tbDb
             // 
-            this.cbDateBirth.Location = new System.Drawing.Point(397, 7);
-            this.cbDateBirth.Name = "cbDateBirth";
-            this.cbDateBirth.Size = new System.Drawing.Size(200, 20);
-            this.cbDateBirth.TabIndex = 27;
+            this.tbDb.Location = new System.Drawing.Point(397, 7);
+            this.tbDb.Name = "tbDb";
+            this.tbDb.Size = new System.Drawing.Size(200, 20);
+            this.tbDb.TabIndex = 27;
             // 
-            // CheckBoxSex
+            // CbSex
             // 
-            this.CheckBoxSex.AutoSize = true;
-            this.CheckBoxSex.Location = new System.Drawing.Point(608, 9);
-            this.CheckBoxSex.Name = "CheckBoxSex";
-            this.CheckBoxSex.Size = new System.Drawing.Size(89, 17);
-            this.CheckBoxSex.TabIndex = 26;
-            this.CheckBoxSex.Text = "Giới tính nam";
-            this.CheckBoxSex.UseVisualStyleBackColor = true;
+            this.CbSex.AutoSize = true;
+            this.CbSex.Location = new System.Drawing.Point(608, 9);
+            this.CbSex.Name = "CbSex";
+            this.CbSex.Size = new System.Drawing.Size(89, 17);
+            this.CbSex.TabIndex = 26;
+            this.CbSex.Text = "Giới tính nam";
+            this.CbSex.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -161,12 +166,12 @@ namespace GUI.QLNS
             this.label5.TabIndex = 25;
             this.label5.Text = "Ngày sinh";
             // 
-            // tbPlaceBirth
+            // tbPb
             // 
-            this.tbPlaceBirth.Location = new System.Drawing.Point(215, 33);
-            this.tbPlaceBirth.Name = "tbPlaceBirth";
-            this.tbPlaceBirth.Size = new System.Drawing.Size(480, 20);
-            this.tbPlaceBirth.TabIndex = 24;
+            this.tbPb.Location = new System.Drawing.Point(215, 33);
+            this.tbPb.Name = "tbPb";
+            this.tbPb.Size = new System.Drawing.Size(480, 20);
+            this.tbPb.TabIndex = 24;
             // 
             // label3
             // 
@@ -193,12 +198,12 @@ namespace GUI.QLNS
             this.label4.TabIndex = 21;
             this.label4.Text = "Họ tên";
             // 
-            // tbDepartment
+            // tbIdD
             // 
-            this.tbDepartment.Location = new System.Drawing.Point(50, 33);
-            this.tbDepartment.Name = "tbDepartment";
-            this.tbDepartment.Size = new System.Drawing.Size(100, 20);
-            this.tbDepartment.TabIndex = 20;
+            this.tbIdD.Location = new System.Drawing.Point(50, 33);
+            this.tbIdD.Name = "tbIdD";
+            this.tbIdD.Size = new System.Drawing.Size(100, 20);
+            this.tbIdD.TabIndex = 20;
             // 
             // label2
             // 
@@ -209,12 +214,12 @@ namespace GUI.QLNS
             this.label2.TabIndex = 19;
             this.label2.Text = "Đơn vị";
             // 
-            // tbId
+            // tbIdE
             // 
-            this.tbId.Location = new System.Drawing.Point(50, 7);
-            this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(100, 20);
-            this.tbId.TabIndex = 18;
+            this.tbIdE.Location = new System.Drawing.Point(50, 7);
+            this.tbIdE.Name = "tbIdE";
+            this.tbIdE.Size = new System.Drawing.Size(100, 20);
+            this.tbIdE.TabIndex = 18;
             // 
             // label1
             // 
@@ -225,7 +230,7 @@ namespace GUI.QLNS
             this.label1.TabIndex = 17;
             this.label1.Text = "Mã";
             // 
-            // Form1
+            // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -235,18 +240,18 @@ namespace GUI.QLNS
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvHR);
-            this.Controls.Add(this.cbDateBirth);
-            this.Controls.Add(this.CheckBoxSex);
+            this.Controls.Add(this.tbDb);
+            this.Controls.Add(this.CbSex);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbPlaceBirth);
+            this.Controls.Add(this.tbPb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbDepartment);
+            this.Controls.Add(this.tbIdD);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.tbId);
+            this.Controls.Add(this.tbIdE);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "GUI";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHR)).EndInit();
@@ -268,16 +273,16 @@ namespace GUI.QLNS
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DateTimePicker cbDateBirth;
-        private System.Windows.Forms.CheckBox CheckBoxSex;
+        private System.Windows.Forms.DateTimePicker tbDb;
+        private System.Windows.Forms.CheckBox CbSex;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbPlaceBirth;
+        private System.Windows.Forms.TextBox tbPb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbDepartment;
+        private System.Windows.Forms.TextBox tbIdD;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbId;
+        private System.Windows.Forms.TextBox tbIdE;
         private System.Windows.Forms.Label label1;
     }
 }
